@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* LOGIN, LOGOUT FORM STYLE  */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+
+.form-container form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-container a {
+  text-decoration: 'none';
+  color: #0B5ED7 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (min-width: 700px) and (max-width: 1115px) {
+  .form-container img {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 750px) {
+  .form-container img {
+    width: 100%;
+  }
+
+  .form-container form {
+    width: 70% !important;
+  }
+
+  .form-container form h1 {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-container form {
+    width: 90% !important;
+  }
+}
+
+
+/* SELECTED ITEM STYLING  */
+
+.selected-item-container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.selected-item-inner-container {
+  margin-left: 15px;
+}
+
+.selected-item-image {
+  height: 200px !important;
+  width: 250px;
+}
+
+.selected-item-quantity-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.selected-item-quantity-inner {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  gap: 10px;
+  margin-left: 18px;
+}
+
+@media only screen and (max-width:800px) {
+  .selected-item-container {
+    flex-wrap: wrap !important;
+    margin-bottom: 50px;
+  }
+
+  .selected-item-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .selected-item-container {
+    width: 80%;
   }
 }
